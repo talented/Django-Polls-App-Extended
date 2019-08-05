@@ -21,7 +21,7 @@ explained below:</p>
 
 3. Add an IP address field to the author model and implement a custom lookup field for IsContainedByOrEqual using PostgreSQL inet operators
 
-- [x] Completed! -> I've implemented [django-netfields](https://pypi.org/project/django-netfields/ django-netfiels) and I've written a test to show how it can be used. Please see tests/test_lookups.py for details
+- [x] Completed! -> I've implemented [django-netfields](https://pypi.org/project/django-netfields/ "django-netfiels") and I've written a test to show how it can be used. Please see tests/test_lookups.py for details
 
 4. Implement a password protected healthcheck endpoint covering:
 
