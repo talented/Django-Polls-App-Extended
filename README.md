@@ -70,12 +70,23 @@ git clone https://github.com/talented/Django-Polls-App-Extended.git
 2. Run
 
 ```shell
+cd django-polls-app-extended
 
 docker-compose build
 
 docker-compose up
 ```
 
-3. You have to create a superuser to see the admin backend.
+3. Without stopping the running server open a new tab in your terminal, get into the same directory and run command below to run tests
 
-Without stopping the running server open a new tab in your terminal, get into the same directory and run commands below to create a super user
+```
+docker-compose run app sh -c "python manage.py test"
+```
+
+4. You have to create a superuser to see the admin backend functionality. Run commands below to get into the running container and create an admin user.
+
+```
+docker exec -it django-polls-app-extended_app_1 sh
+
+python manage.py createsuperuser
+```
