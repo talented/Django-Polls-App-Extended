@@ -3,7 +3,7 @@
 <p>This is a temporary repository to showcase the solution for the programming tasks
 explained below:</p>
 
-### Main Tasks
+## Main Tasks
 
 1. Create the Django polls app with Django version 2.2 or later, Python 3.7 or later and PostgreSQL version 11.0 or later as database system
 
@@ -31,14 +31,23 @@ explained below:</p>
    - 2. Database is accessible and can be queried
    - 3. App server has disk space left
 
-- [x] Completed! -> I've implemented [django-netfields](https://pypi.org/project/django-netfields/ "django-netfiels") and I've written a test to show how it can be used. Please see tests/test_lookups.py for details
+   - [x] Completed! -> I've implemented [watchman](https://github.com/mwarkentin/django-watchman "watchman") for monitoring the health of databases, caches and default file storage.
+
+You have to be a logged-in staff user to display the page for system status at:
+
+```shell
+{website}/watchman/dashboard/
+```
 
 ---
 
 5. Adjust the Django admin panel for the Author model that IP addresses are displayed but the last 8 bits are masked with asterisk
-   </span>
 
-###Optional Tasks
+   - [x] Completed! -> last 8 bits of IP addresses are encrypted with using regex in a custom method for django admin list display field.
+
+---
+
+##Optional Tasks
 
 1. Provide a brief concept of how you would provide a redundant setup of the above Django app. (at least one App/DB server at a time can fail) in any form you prefer (e.g. Text, Diagram, Presentation, Dockerfiles etc.)
 
