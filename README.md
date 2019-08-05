@@ -5,16 +5,15 @@ explained below:</p>
 
 ### Main Tasks
 
-1. Create the Django polls app with Django version 2.2 or later, Python 3.7 or later and PostgreSQL version 11.0 or later as database system
+[x] 1. Create the Django polls app with Django version 2.2 or later, Python 3.7 or later and PostgreSQL version 11.0 or later as database system
 
-- ![#157500](https://placehold.it/20/157500?text=+) Completed!
-  ![](https://placehold.it/350x90/009955/fff?text=Completed!)
+![#157500](https://placehold.it/20/157500?text=+) Completed!
 
-2. Implement a Django command for importing thousands of polls at a time from a source of your choice (e.g. CSV)
-
-- ![#f03c15]Completed -> Please see tests/test_commands.py for details`#f03c15`
+[x] 2. Implement a Django command for importing thousands of polls at a time from a source of your choice (e.g. CSV)
 
 <p style="margin-left:20px;">2.1 Validate the functionality of your command by implementing unit and/or integration tests</p>
+
+![#157500](https://placehold.it/20/157500?text=+) Completed -> Please see tests/test_commands.py for details
 
 3. Add an IP address field to the author model and implement a custom lookup field for IsContainedByOrEqual using PostgreSQL inet operators
 
