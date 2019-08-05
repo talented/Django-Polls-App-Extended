@@ -15,7 +15,7 @@ explained below:</p>
 
    - 2.1 Validate the functionality of your command by implementing unit and/or integration tests
 
-   - [x] Completed! -> Please see tests/test_commands.py for details
+   - [x] Completed! -> Please see tests/test_commands.py for details. You can run tests inside docker container. See details in docker section below.
 
 ---
 
@@ -83,10 +83,16 @@ docker-compose up
 docker-compose run app sh -c "python manage.py test"
 ```
 
-4. You have to create a superuser to see the admin backend functionality. Run commands below to get into the running container and create an admin user.
+4. You have to create a superuser to see the admin backend functionality. Run commands below to get into the running container and create an admin user
 
 ```
 docker exec -it django-polls-app-extended_app_1 sh
 
 python manage.py createsuperuser
+```
+
+5. In order to populate the database for testing purposes with a few poll questions with author information run command below inside the docker container
+
+```
+python manage.py import_from_csv /pgdata/polls.csv
 ```

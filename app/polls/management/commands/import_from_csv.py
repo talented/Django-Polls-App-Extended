@@ -41,7 +41,7 @@ def save_to_database(polls):
         try:
             Author.objects.get(name=poll['author'])
         except ObjectDoesNotExist:
-            author = Author(name=poll['author'])
+            author = Author(name=poll['author'], inet=poll['inet'])
             author.save()
 
         try:
@@ -53,7 +53,7 @@ def save_to_database(polls):
                 question_text=poll['question'], pub_date=poll['pub_date'], author=author)
             question.save()
 
-            for i in range(1, len(poll.values())-2):
+            for i in range(1, len(poll.values())-3):
                 choice = Choice(question=question,
                                 choice_text=poll['choice'+str(i)])
                 choice.save()

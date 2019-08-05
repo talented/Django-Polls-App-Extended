@@ -2,12 +2,10 @@ import datetime
 from django.db import models
 from django.utils import timezone
 from django.contrib.auth.models import User
-from .managers import AuthorQuerySet
 from netfields import InetAddressField, NetManager
 
 
 class Author(models.Model):
-    # name = models.OneToOneField(User, on_delete=models.CASCADE)
     name = models.CharField(max_length=255)
     inet = InetAddressField(null=True)
 

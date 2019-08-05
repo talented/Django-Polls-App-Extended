@@ -14,25 +14,14 @@ class IndexView(generic.ListView):
     template_name = 'polls/index.html'
     context_object_name = 'latest_poll_list'
 
-    # def get_queryset(self):
-    #     return Question.objects.all()
-    """
-        Return the last five published polls.
-        """
-    # return Question.objects.filter(pub_date__lte=timezone.now()).order_by('-pub_date')[:10]
+    def get_queryset(self):
+        return Question.objects.filter(pub_date__lte=timezone.now()).order_by('-pub_date')[:10]
 
 
 class DetailView(generic.DetailView):
 
     model = Question
-    # queryset = Question.objects.all()
     template_name = 'polls/detail.html'
-
-    # def get_queryset(self):
-    #     """
-    #     Excludes any polls that aren't published yet.
-    #     """
-    #     return Question.objects.filter(pub_date__lte=timezone.now())
 
 
 class ResultsView(generic.DetailView):
