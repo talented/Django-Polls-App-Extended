@@ -1,0 +1,6 @@
+Django>=2.2.0
+psycopg2>=2.7.0,<2.8.0
+django-suit>=0.2.25
+django-netfields
+django-health-check
+django-watchman

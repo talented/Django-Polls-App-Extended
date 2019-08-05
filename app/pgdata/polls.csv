@@ -1,0 +1,5 @@
+author,question,pub_date,choice1,choice2,choice3,choice4,choice5,choice6,choice7,choice8,choice9,choice10
+ozzy,What is your favorite programming language?,2019-08-01,python,Javascript,java,c++,ruby,C,C#,go,swift
+ozzy,What is your favorite backend framework?,2019-08-02,django,ruby on rails,spring
+ozzy,What is your favorite frontend framework?,2019-08-03,vue,react,angular,ember
+chris,What is your favorite city to live in Germany?,2019-08-04,hamburg,munich,berlin,cologne,dusseldorf,stuttgart,nuremberg
