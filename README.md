@@ -47,8 +47,35 @@ You have to be a logged-in staff user to display the page for system status at:
 
 ---
 
-##Optional Tasks
+## Optional Tasks
 
 1. Provide a brief concept of how you would provide a redundant setup of the above Django app. (at least one App/DB server at a time can fail) in any form you prefer (e.g. Text, Diagram, Presentation, Dockerfiles etc.)
 
+   - [x] Completed! -> I've used containerization with Docker. Please see build instructions below to test the functionality of the app.
+
+---
+
 2. Describe briefly how you would build and distribute this app for a Debian based server infrastructure
+
+---
+
+## Build instructions with Docker Compose
+
+1. Clone the repo
+
+```shell
+git clone https://github.com/talented/Django-Polls-App-Extended.git
+```
+
+2. Run
+
+```shell
+
+docker-compose build
+
+docker-compose up
+```
+
+3. You have to create a superuser to see the admin backend.
+
+Without stopping the running server open a new tab in your terminal, get into the same directory and run commands below to create a super user
