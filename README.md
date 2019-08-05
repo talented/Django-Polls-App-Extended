@@ -7,11 +7,11 @@ explained below:</p>
 
 1. Create the Django polls app with Django version 2.2 or later, Python 3.7 or later and PostgreSQL version 11.0 or later as database system
 
-- <span style="color:red;">Completed</span>
+- ![#f03c15]Completed`#f03c15`
 
 2. Implement a Django command for importing thousands of polls at a time from a source of your choice (e.g. CSV)
 
-- <span style="color:red;">Completed -> Please see tests/test_commands.py for details</span>
+- ![#f03c15]Completed -> Please see tests/test_commands.py for details`#f03c15`
 
 <p style="margin-left:20px;">2.1 Validate the functionality of your command by implementing unit and/or integration tests</p>
 
