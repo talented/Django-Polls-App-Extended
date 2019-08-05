@@ -8,7 +8,8 @@ explained below:</p>
 1. Create the Django polls app with Django version 2.2 or later, Python 3.7 or later and PostgreSQL version 11.0 or later as database system
 
 - [x] Completed!
-      </ hr>
+
+---
 
 2. Implement a Django command for importing thousands of polls at a time from a source of your choice (e.g. CSV)
 
@@ -16,7 +17,7 @@ explained below:</p>
 
 - [x] Completed! -> Please see tests/test_commands.py for details
 
-</ hr>
+---
 
 3. Add an IP address field to the author model and implement a custom lookup field for IsContainedByOrEqual using PostgreSQL inet operators
 
