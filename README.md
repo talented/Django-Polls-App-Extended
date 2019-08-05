@@ -23,14 +23,16 @@ explained below:</p>
 
 - [x] Completed! -> I've implemented [django-netfields](https://pypi.org/project/django-netfields/ "django-netfiels") and I've written a test to show how it can be used. Please see tests/test_lookups.py for details
 
+---
+
 4. Implement a password protected healthcheck endpoint covering:
 
-<span style="margin-left:20px;">
-1.	Django app is up and running and not in dev mode
-2.	Database is accessible and can be queried
-3.	App server has disk space left
+... 1. Django app is up and running and not in dev mode
+... 2. Database is accessible and can be queried
+... 3. App server has disk space left
+
 5. Adjust the Django admin panel for the Author model that IP addresses are displayed but the last 8 bits are masked with asterisk
-</span>
+   </span>
 
 ###Optional Tasks
 
