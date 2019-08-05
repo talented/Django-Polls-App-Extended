@@ -7,29 +7,33 @@ explained below:</p>
 
 1. Create the Django polls app with Django version 2.2 or later, Python 3.7 or later and PostgreSQL version 11.0 or later as database system
 
-- [x] Completed!
+   - [x] Completed!
 
 ---
 
 2. Implement a Django command for importing thousands of polls at a time from a source of your choice (e.g. CSV)
 
-- 2.1 Validate the functionality of your command by implementing unit and/or integration tests
+   - 2.1 Validate the functionality of your command by implementing unit and/or integration tests
 
-- [x] Completed! -> Please see tests/test_commands.py for details
+   - [x] Completed! -> Please see tests/test_commands.py for details
 
 ---
 
 3. Add an IP address field to the author model and implement a custom lookup field for IsContainedByOrEqual using PostgreSQL inet operators
 
-- [x] Completed! -> I've implemented [django-netfields](https://pypi.org/project/django-netfields/ "django-netfiels") and I've written a test to show how it can be used. Please see tests/test_lookups.py for details
+   - [x] Completed! -> I've implemented [django-netfields](https://pypi.org/project/django-netfields/ "django-netfiels") and I've written a test to show how it can be used. Please see tests/test_lookups.py for details
 
 ---
 
 4. Implement a password protected healthcheck endpoint covering:
 
-...1 Django app is up and running and not in dev mode
-...2 Database is accessible and can be queried
-...3 App server has disk space left
+   - 1. Django app is up and running and not in dev mode
+   - 2. Database is accessible and can be queried
+   - 3. App server has disk space left
+
+- [x] Completed! -> I've implemented [django-netfields](https://pypi.org/project/django-netfields/ "django-netfiels") and I've written a test to show how it can be used. Please see tests/test_lookups.py for details
+
+---
 
 5. Adjust the Django admin panel for the Author model that IP addresses are displayed but the last 8 bits are masked with asterisk
    </span>
