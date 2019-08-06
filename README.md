@@ -83,16 +83,16 @@ docker-compose up
 docker-compose run app sh -c "python manage.py test"
 ```
 
-4. In order to populate the database for testing purposes with a few poll questions with author information run command below inside the docker container
-
-```
-python manage.py import_from_csv /pgdata/polls.csv
-```
-
-5. You have to create a superuser to see the admin backend functionality. Run commands below to get into the running container and create an admin user
+4. In order to populate the database for testing purposes with a few poll questions with author information, run commands below to get into the running container and run command to import data from given csv file
 
 ```
 docker exec -it django-polls-app-extended_app_1 sh
 
+python manage.py import_from_csv /pgdata/polls.csv
+```
+
+5. You have to create a superuser to see the admin backend functionality. Run command below inside the docker container to create an admin user
+
+```
 python manage.py createsuperuser
 ```
