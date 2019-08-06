@@ -10,8 +10,6 @@ WORKDIR /app
 
 # Install dependencies
 COPY requirements.txt .
-COPY docker-entrypoint-api.sh /app/docker-entrypoint-api.sh
-RUN chmod +x /app/docker-entrypoint-api.sh
 
 RUN apk add --update --no-cache postgresql-client
 RUN apk add --update --no-cache --virtual .tmp-build-deps \
@@ -19,8 +17,6 @@ RUN apk add --update --no-cache --virtual .tmp-build-deps \
 
 RUN pip3 install -r ./requirements.txt
 RUN apk del .tmp-build-deps
-
-
 
 WORKDIR /app
 COPY ./app /app
