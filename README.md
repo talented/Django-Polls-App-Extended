@@ -7,7 +7,7 @@ explained below:</p>
 
 1. Create the Django polls app with Django version 2.2 or later, Python 3.7 or later and PostgreSQL version 11.0 or later as database system
 
-   - [x] Completed! -> reach out
+   - [x] Completed! -> open localhost:8000/polls in browser after running the docker image as instructions given below.
 
 ---
 
